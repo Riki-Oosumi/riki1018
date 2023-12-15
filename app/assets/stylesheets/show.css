@@ -1,0 +1,31 @@
+.show_all {
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10%;
+
+}
+
+.users_show_all {
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 0.445);
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    border-radius: 10%;
+    
+}
+
+.img-wrapper {
+    width: 600px;
+    height: 500px;
+    background-image: url(tree.webp);
+  }
+
+ .img-nature {
+    width: 600px;
+    height: 500px;
+    background-image: url(nature.jpg);
+  }

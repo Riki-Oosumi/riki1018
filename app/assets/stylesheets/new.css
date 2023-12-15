@@ -1,0 +1,8 @@
+.new-page {
+    margin-top: 12%;
+    background-color: rgba(255, 255, 255, 0.445);
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    border-radius: 10%;
+}

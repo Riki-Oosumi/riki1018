@@ -1,0 +1,102 @@
+// Place all the styles related to the days controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+header {
+    text-align: right;
+    width: 100%;
+    height: 170px;
+    background-color: rgba(58, 52, 52, 0.103);
+    padding: 20px 50px;
+    box-sizing: border-box;
+    font-weight: bold;
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0;
+    display: flex;
+ 
+}
+
+.header-list{
+    font-size:30px;
+    display:flex;
+    text-align: right;
+    margin-left:45%;
+    
+}
+
+.post{
+    margin-right:100px;
+}
+
+.log{
+    margin-right:100px;
+}
+
+// ここまでがapplication
+
+
+// ここからがindex
+.index_all{
+    background-image:url("nature.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.h3 {
+    margin-top: 50px;
+}
+
+.post_all{
+    text-align: center;
+}
+
+.day{
+    display: row;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+tbody{
+    border: solid;
+    border-color: rgb(23, 23, 24);
+}
+
+table.table-table-striped{
+    border: solid;
+    border-color: rgb(23, 23, 24);
+}
+
+thead{
+    border: solid;
+    border-color: rgb(23, 23, 24);
+}
+
+tr{
+    border: solid;
+    border-color: rgb(23, 23, 24);
+
+}
+
+td.day wday{
+
+    border-color: rgb(23, 23, 24);
+
+}
+
+.simple-calendar td{
+    border: solid;
+    border-color: rgb(23, 23, 24);
+
+}
+
+.simple-calendar th{
+    border: solid;
+    border-color: rgb(23, 23, 24);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Days</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <script src="https://kit.fontawesome.com/f1f36a12bf.js" crossorigin="anonymous"></script>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header>
+    <div class="home">
+      <h1><%= link_to "仮の題名", days_path %></h1>
+    </div>
+    <div class="header-list">
+      <div class="post">
+        <%= link_to "新規投稿へ", new_day_path %>
+      </div>
+      <div class="log">
+          <% if user_signed_in? %>
+            <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <%= link_to "新規登録", new_user_registration_path %></li>
+            <%= link_to "ログイン", new_user_session_path %></li>
+          <% end %>
+      </div>
+      <div class="mypage_link">
+        <% if user_signed_in? %>
+        <%= link_to "マイページへ", user_path(current_user.id) %>
+        <% end %>
+      </div>
+    </div>
+  </header>
+  <main>
+   <%= yield %>
+  </main>
+ </body>
+</html>

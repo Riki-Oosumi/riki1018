@@ -1,0 +1,31 @@
+<body class="user3">
+<div class="new-page">
+  <h1>(自分の題名)</h1>
+  <div class="h3">day</div>
+  <%= form_for @day do |f| %>
+
+
+
+
+
+
+    <div class="field">
+      <%= f.label :body  %>
+      <%= f.text_area :body, :size => "30x2" %>
+    </div>
+
+    <div class="time">
+      <%= f.label :start_time %>
+      <%= f.datetime_select :start_time %>
+    </div>
+
+    <div class="field">
+      <%= f.label :image %>
+      <%= f.file_field :image %>
+    </div>
+
+    <%= f.submit "dayを投稿する" %>
+  <% end %>
+ 
+ <%= link_to "day一覧に戻る", days_path %>
+</div>
