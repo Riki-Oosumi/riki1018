@@ -6,21 +6,23 @@ header {
     text-align: right;
     width: 100%;
     height: 170px;
-    background-color: rgba(58, 52, 52, 0.103);
+    background-color: rgba(56, 54, 54, 0.075);
     padding: 20px 50px;
     box-sizing: border-box;
     font-weight: bold;
     top: 0; /* 上下の固定位置を上から0pxにする */
     left: 0;
     display: flex;
+
  
 }
 
 .header-list{
-    font-size:30px;
+    font-size:25px;
     display:flex;
     text-align: right;
-    margin-left:45%;
+    margin-left:60%;
+    margin-top: 40px;
     
 }
 
@@ -36,14 +38,15 @@ header {
 
 
 // ここからがindex
-.index_all{
-    background-image:url("nature.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+// .index_all{
+//     background-image:url("mokume.jpg");
+//     background-color: rgba(255, 255, 255, 0.445);
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
     
     
-}
+// }
 
 .h3 {
     margin-top: 50px;
@@ -59,7 +62,7 @@ header {
 
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(68, 64, 64);
 }
 
 

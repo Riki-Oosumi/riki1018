@@ -15,24 +15,35 @@
   <body>
   <header>
     <div class="home">
-      <h1><%= link_to "仮の題名", days_path %></h1>
+      <%=link_to days_path do %>
+        <%= image_tag 'title.png', alt: "day", class: "rogo" %>
+      <%end%>
     </div>
     <div class="header-list">
       <div class="post">
-        <%= link_to "新規投稿へ", new_day_path %>
+          <% if user_signed_in? %>
+            <%= link_to new_day_path, class: "btn btn btn-secondary text-white", method: :get do %>
+             <i class="fa-regular fa-calendar-plus"></i>
+            <% end %>
+          <% end %>
+        
       </div>
       <div class="log">
           <% if user_signed_in? %>
-            <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+            <%= link_to destroy_user_session_path, class: "btn btn btn-secondary text-white", method: :delete do %>
+              <i class="fa-solid fa-right-from-bracket"></i>
+            <% end %>
           <% else %>
             <%= link_to "新規登録", new_user_registration_path %></li>
             <%= link_to "ログイン", new_user_session_path %></li>
           <% end %>
       </div>
       <div class="mypage_link">
-        <% if user_signed_in? %>
-        <%= link_to "マイページへ", user_path(current_user.id) %>
+      <% if user_signed_in? %>
+        <%= link_to user_path(current_user.id), class: "btn btn btn-secondary text-white", method: :get do %>
+          <i class="fa-solid fa-user" style="color: #000;"></i>
         <% end %>
+      <% end %>
       </div>
     </div>
   </header>

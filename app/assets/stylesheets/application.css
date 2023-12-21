@@ -15,4 +15,18 @@
  *= require_self
  */
 
- 
+ .rogo{
+    width: 9vw;
+ }
+
+ .mypage_link{
+    font-size: 40px;
+ }
+
+ .log{
+    font-size: 40px;
+ }
+
+ .post{
+    font-size: 40px;
+ }

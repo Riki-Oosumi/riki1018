@@ -1,6 +1,6 @@
 <body class="user3">
 <div class="new-page">
-  <h1>(自分の題名)</h1>
+  <h1>服装日記</h1>
   <div class="h3">day</div>
   <%= form_for @day do |f| %>
 
@@ -24,8 +24,8 @@
       <%= f.file_field :image %>
     </div>
 
-    <%= f.submit "dayを投稿する" %>
+    <%= f.submit "投稿する" %>
   <% end %>
  
- <%= link_to "day一覧に戻る", days_path %>
+ <%= link_to "一覧に戻る", days_path %>
 </div>
